@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Buton NORTH -->
+    <Button
+        android:id="@+id/buttonNorth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NORTH"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true" />
+
+    <!-- Buton SOUTH -->
+    <Button
+        android:id="@+id/buttonSouth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SOUTH"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />
+
+    <!-- Buton EAST -->
+    <Button
+        android:id="@+id/buttonEast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EAST"
+        android:layout_toRightOf="@id/buttonNorth"
+        android:layout_below="@id/buttonNorth" />
+
+    <!-- Buton WEST -->
+    <Button
+        android:id="@+id/buttonWest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WEST"
+        android:layout_toLeftOf="@id/buttonNorth"
+        android:layout_below="@id/buttonNorth" />
+
+    <!-- Caseta de text pentru afisare -->
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonNorth"
+        android:layout_marginTop="16dp"
+        android:text="Results:"
+        android:textSize="16sp" />
+
+    <!-- Buton pentru navigare -->
+    <Button
+        android:id="@+id/buttonNavigate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Navigate to Secondary Activity"
+        android:layout_below="@id/textViewResult"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>
