@@ -1,0 +1,27 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="ro.pub.cs.systems.eim.Colocviul1_1">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat">
+
+        <!-- Activitatea principală -->
+        <activity android:name=".Colocviul1_1_MainActivity"
+            android:exported="true"
+            tools:ignore="MissingClass">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Activitatea secundară -->
+        <activity android:name=".SecondaryActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
